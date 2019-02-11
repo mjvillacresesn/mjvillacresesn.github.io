@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+  
+  <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="./myStyle.css"> -->
+    <!-- Title of Page -->
+    <title>City Lat * Wind Spd</title>
+
+
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+        
+* {
+  box-sizing: border-box;
+}
+        
+.bg-image {
+/* The image used */
+  background-image: url("./middleoftheworld_ecuador.jpg");
+          
+/* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+          
+/* Full height */
+  height: 100%; 
+          
+/* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(105, 129, 129); /* Fallback color */
+  background-color: rgba(60, 78, 75, 0.527); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 40px;
+  padding: 7px;
+  background-color: rgba(135, 236, 240, 0.712);
+
+}
+
+h2 {
+  font-size: 20px;
+  padding: 1px;
+  background-color: rgba(207, 235, 236, 0.493);
+}
+
+h4 {
+  font-size: 20px;
+  padding: 25px;
+  text-align: left;
+}
+
+</style>
+</head>
+
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+  <nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="./WeatherChanges_Web.html">What's the weather like?</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <a href="https://github.com/mjvillacresesn/Weather-Changes/tree/master/WeatherPy" class="badge badge-info">GitHub Repository</a>  
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./WeatherChanges_Web.html">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./WeatherChanges_AnalystsBio.html">The Analyst</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./WeatherChanges_Comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./WeatherChanges_Data.html">Data Info</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Visuals
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./WeatherChanges_CityLatCloudiness.html">City Lat vs. Cloudiness</a>
+            <a class="dropdown-item" href="./WeatherChanges_CityLatHumidity.html">City Lat vs. Humidity</a>
+            <a class="dropdown-item" href="./WeatherChanges_CityLatMaxTemp.html">City Lat vs. Max Temp</a>
+            <a class="dropdown-item" href="./WeatherChanges_CityLatWindSpeed.html">City Lat vs. Wind Speed<span class="sr-only">(current)</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+<h1> City Latitude vs Wind Speed </h1></br> 
+<h2>
+    <div class="container">
+
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-md-6">
+              <p><h4>There is no correlation between Wind Speed (%) and City Latitude. However, we can observe most of the Wind Speed (%) tends to concentrate between 0-8 mph.
+              </br></br>In addition, the highest Wind Speed (%) happens within cities at northern hemisphere.            
+              </h4></p>
+            </div>
+            <div class="col-md-6">
+              <p><img src="./WeatherGraphs/citylat_windspeed.png" alt="CityLatWindSpeed"></p>
+            </div>
+          </div>
+    </div>
+
+
+
+
+</h2>
+
+</div>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
