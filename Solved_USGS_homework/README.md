@@ -8,5 +8,5 @@
     - Popup text appended with magnitdues rating
  ---
  
- # Webpage: [Click Here](mjvillacresesn.github.io/Solved_USGS_homework/index.html)
+ # Webpage: [Click Here](https://mjvillacresesn.github.io/Solved_USGS_homework/index.html)
 
